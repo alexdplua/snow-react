@@ -1,4 +1,4 @@
-import test from './index2'
-import './scss/test.scss'
+import './scss/main.scss'
+// import $ from 'jquery';
+// import 'bootstrap';
 
-test('Hi !!!!123123')

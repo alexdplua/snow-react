@@ -1,4 +1,5 @@
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
     devtool: 'source-map',
@@ -9,9 +10,10 @@ module.exports = {
         publicPath: 'public/'
     },
     devServer: {
-        contentBase: './src',
+        contentBase: [path.join(__dirname, 'src'), path.join(__dirname, 'public')],
         watchContentBase: true,
-        hotOnly: true
+        hotOnly: true,
+        stats: "errors-only"
     },
     module: {
         rules: [
@@ -33,6 +35,17 @@ module.exports = {
                 }, {
                     loader: 'css-loader' // translates CSS into CommonJS
                 }, {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: [
+                                autoprefixer({
+                                    browsers:['ie >= 8', 'last 4 version']
+                                })
+                            ],
+                            sourceMap: true
+                        }
+                    },
+                    {
                     loader: 'sass-loader' // compiles Sass to CSS
                 }]
             },

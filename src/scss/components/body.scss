@@ -1,0 +1,23 @@
+body {
+  background-color: gray;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.65;
+  letter-spacing: .004em;
+}
+
+#app{
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p{
+  margin: 0;
+  padding: 0;
+}
+
+
+a{
+  &:hover{
+    text-decoration: none;
+    transition: 0.3s;
+  }
+}
