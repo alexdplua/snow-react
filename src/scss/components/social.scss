@@ -1,0 +1,21 @@
+.social{
+  text-align: center;
+  margin-bottom: 15px;
+
+  a{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 3px 6px;
+    opacity: .4;
+    transition: opacity .5s;
+    color: rgb(23, 23, 23);
+
+    &:hover{
+      opacity: 1;
+    }
+    
+    i{
+
+    }
+  }
+}

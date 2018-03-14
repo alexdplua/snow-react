@@ -1,0 +1,27 @@
+.text{
+  text-align: center;
+  color: white;
+
+  &__desc{
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    padding-bottom: 17px;
+  }
+
+  &__about, &__tagline{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 1.44px;
+  }
+
+  &__tagline{
+    font-style: italic;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,32 @@
+.partner{
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  @include response($screen-sm-max){
+    display: none;
+  }
+
+  &__container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+  &__item{
+    flex-shrink: 0;
+    padding: 20px;
+    width: 20%;
+    overflow: hidden;
+  }
+
+  &__img{
+
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 module.exports = {
     devtool: 'source-map',
@@ -82,5 +83,12 @@ module.exports = {
                 include: path.resolve(__dirname, 'src'),
                 loader: 'file-loader'
             }]
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
+    ],
 };

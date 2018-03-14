@@ -3,6 +3,9 @@
   left: 0;
   right: 0;
   top: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  z-index: 30;
 
   &__wrap{
     display: flex;

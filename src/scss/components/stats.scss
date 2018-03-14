@@ -1,0 +1,45 @@
+.stats{
+  background-color: $stats-bg;
+  padding-top: 93px;
+  padding-bottom: 91px;
+  @include response($screen-sm-max){
+    padding-bottom: 65px;
+  }
+
+  &__block{
+    color: #ffffff;
+    display: flex;
+
+    @include response($screen-sm-max){
+      margin-bottom: 25px;
+    }
+
+
+  }
+
+  &__icon{
+    flex-shrink: 0;
+    margin-right: 24px;
+    margin-top: 4px;
+    span{
+      font-size: 48px;
+      font-weight: 400;
+    }
+  }
+
+  &__info{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.54px;
+  }
+
+  &__numb{
+    font-size: 18px;
+  }
+
+  &__desc{
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

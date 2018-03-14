@@ -1,3 +1,39 @@
-header{
+.header{
   position: relative;
+  height: 100vh;
+  min-height: 400px;
+  @include backgr(cover, center);
+  background-image: url('../img/home-7.jpg');
+
+  &__mask{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $header-mask;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  &__content{
+    position: relative;
+    z-index: 20;
+    height: 100%;
+
+
+    .container{
+      height: 100%;
+    }
+  }
+
+  &__wrap{
+    padding-bottom: 138px;
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

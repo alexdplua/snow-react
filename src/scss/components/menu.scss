@@ -2,6 +2,7 @@
   font-size: 0;
   display: flex;
   flex-direction: row;
+  z-index: 40;
 
   &__item{
 
@@ -19,6 +20,12 @@
         color: white;
       }
 
+    }
+
+    &:last-child{
+      a{
+        padding-right: 0;
+      }
     }
   }
 }

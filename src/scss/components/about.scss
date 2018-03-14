@@ -1,0 +1,41 @@
+.about{
+  background-color: #fff;
+  padding-top: 85px;
+  padding-bottom: 105px;
+  &__wrap{
+    max-width: 730px;
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+  &__title{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.95px;
+    color:$about-title;
+    &-pos{
+      margin-bottom: 25px;
+    }
+  }
+
+  &__desc{
+    color: $about-description;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.07px;
+
+    &-pos{
+      margin-bottom: 24px;
+    }
+  }
+
+  &__signature {
+    @include size(222px, 57px);
+    margin: 0 auto;
+  }
+}
